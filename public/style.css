@@ -2,7 +2,23 @@ body {
   background-color: mediumturquoise;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-h1 {
+.showtitle {
+  color:rgb(46, 86, 204);
+  text-shadow:2px 2px rgb(25, 46, 112);
+  font-size: 82px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.hidetitle{
+    color:mediumturquoise;
+    font-size: 0px;
+}
+.showtitle:hover + .hidetitle  {
+    color:rgb(209, 104, 139);
+  text-shadow: 2px 2px rgb(144, 56, 86);
+  font-size: 52px;
   margin-top: 2%;
   margin-bottom: 2%;
   text-align: center;
@@ -11,8 +27,9 @@ h1 {
 .container {
   position: relative;
   width: 99%;
-  margin-top: 25%;
-  height: 0vh;
+  margin-top: auto;
+  height: fit-content;
+  overflow-y:scroll;
 }
 .outputOne {
   position: absolute;
@@ -41,4 +58,48 @@ img {
 button {
   background-color: mediumturquoise;
   height: fit-content;
+  border-color: cornflowerblue;
+}
+h2 {
+    font-size: 32px;
+    color:rgb(152, 87, 214);
+  text-shadow: 2px 2px  rgb(84, 32, 133);
+}
+section {
+  font-size: 20px;
+  color:rgb(152, 87, 214);
+  width:50%;
+  height:50vh;    
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+.banner{
+  width: 482px;
+  height: 562px;  
+}
+
+::-webkit-scrollbar {
+  width: 25px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px cornflowerblue; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: turquoise; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(85, 131, 216); 
+}
+::-webkit-scrollbar-button {
+    background:turquoise;
+    height:10px;
+    width: 10px;
 }

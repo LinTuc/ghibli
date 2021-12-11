@@ -1,6 +1,8 @@
 let data;
 let visaInfo = function(id) {
-    alert(`Original titel:\n${data[id].original.title}`);
+    alert(`Original titel:\n${data[id].original_title}`);
+    document.getElementById("container").innerHTML=`<section><h2>${data[id].title}</h2><br /><p>
+    "${data[id].description}"</p><img class="banner" src="${data[id].movie_banner}" /></section>`;
 }
 
 window.onload = function() {
