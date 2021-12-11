@@ -1,6 +1,6 @@
 let data;
 let visaInfo = function(id) {
-    alert(data[id].description);
+    alert(`Original titel:\n${data[id].original.title}`);
 }
 
 window.onload = function() {
@@ -14,7 +14,7 @@ window.onload = function() {
         let divbox=document.createElement("div");   
         for (let i = 0; i < data.length; i++) {   
             divbox.className+="divbox";
-            divbox.innerHTML+= `<button class='btn' onclick="visaInfo(${i});"><img src="${data[i].movie_banner}"></button>`;
+            divbox.innerHTML+= `<button class='btn' onclick="visaInfo(${i});"><img src="${data[i].image}"></button>`;
             outputOne.appendChild(divbox); 
         }
     }
